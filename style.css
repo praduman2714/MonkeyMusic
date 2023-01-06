@@ -1,0 +1,687 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    /* background-image: url("logo/backgrounddd.jfif");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-image: linear-gradient(138deg, rgb(58 50 75), #0c2233);
+}
+
+.navigationBar{
+    height: 10%;
+	width: auto;
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding-left: 5%;
+	padding-right: 5%;
+	transition: all ease-in-out 1s; 
+}
+
+.navigationBar > div {
+	display: inline-block;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+}
+.logo img{
+    height: inherit;
+    border-radius: 80%;
+}
+
+.titleCombo > div{
+     vertical-align: middle;
+     display: inline-block;
+}
+.searchBar {
+	width: 20%;
+	position: relative;
+}
+.searchBar input {
+	width: 100%;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 18px;
+	border: none;
+	padding: 5px;
+	font-weight: 500;
+	text-align: center;
+	transition: all ease-in-out 0.1s;
+}
+.search-ico {
+	color: rgba(0, 0, 0, 0.5);
+}
+/* mic icon for input */
+.mic-ico {
+	color: rgba(0, 0, 0, 0.5);
+}
+/* search icon */
+.searchBar > div:nth-child(1) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	left: 5%;
+	top: 10%;
+	transition: all ease-in-out 0.1s;
+}
+/* mic icon */
+.searchBar > div:nth-child(3) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	right: 0%;
+	top: 10%;
+	transition: all ease-in-out 0.1s;
+}
+/* when the user clicks on the search bar, there should be no blue outlining */
+input:focus {
+	outline: none;
+}
+
+.notification-bell  {
+	color: wheat;
+}
+/* profile picture of the user */
+.profile-picture img {
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+}
+
+.webName{
+    color: wheat;
+}
+
+/* Main Section */
+main{
+    width: 100%;
+	padding: 0% 3%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	transition: all ease-in-out 1s;
+}
+.aside {
+	display: inline-block;
+	overflow: hidden;
+}
+/* section one of the main part */
+.section-1 {
+	width: 70%;
+	height: 86vh;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.section-1::-webkit-scrollbar{
+    display: none;
+}
+
+.banner{
+    position: relative;
+	left: 8vw;
+	margin-top: 5%;
+	transition: all ease-in-out 1s;
+}
+.innerBanner{
+    position: absolute;
+	left: 4%;
+	width: 70%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	overflow: visible;
+	justify-content: space-around;
+}
+
+.banner img {
+	height: 15vw;
+	width: 22.5vw;
+	transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+}
+
+.banner img:nth-child(1) {
+	position: relative;
+	left: 41vw;
+	z-index: 2;
+}
+/* image which is in the maddle of the carousel */
+.banner img:nth-child(2) {
+	z-index: 3;
+}
+/* third image in the carousel */
+/* if you see it direction wise, then it is the first image in the carousel */
+.banner img:nth-child(3) {
+	position: relative;
+	right: 41vw;
+	z-index: 1;
+}
+
+.banner img:hover{
+    box-shadow: 0px 0px 12 px 0.1px black;
+    z-index: 4;
+    height: 18vw;
+    width: 25vw;
+}
+
+/* Latest Realease */
+.latestRelease{
+    position: relative;
+    top: 20vw;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.latestReleaseContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.latestReleaseContent > div {
+	height: 100px;
+	width: 47%;
+	margin: 5px 0px;
+}
+
+.card{
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+}
+.card:hover{
+    /* position:relative; */
+    box-shadow: 0px 0px 10px 1px black;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    min-width: 80px;
+}
+
+.playButton{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    top: -105%;
+    color: black;
+    font-size: 0px;
+    padding-top: 15px;
+    text-align: center;
+    z-index: 6;
+}
+.playBtton:hover {
+	color: wheat;
+	background-color: black;
+    opacity: 0.8;
+}
+
+.songDescription{
+    margin: auto 10%;
+}
+.options{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    text-align: right;
+    margin: auto 0% 2% 2%;
+}
+
+.latest-release-dropdown {
+	position: absolute;
+	background-color: darkslateblue;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	opacity: 0;
+	width: 0px;
+	height: 0px;
+	top: 20px;
+	right: 0px;
+	overflow: hidden;
+	z-index: 2;
+	border: 1px solid black;
+	box-shadow: 0px 0px 2px 1px black;
+	transition: all ease-in-out 0.3s;
+}
+
+.fa-ellipsis-h {
+	cursor: pointer;
+}
+/* this input is for the latest release drop down */
+input[type="checkbox"] {
+	display: none;
+}
+/* checking it, will trigger the latest release dropdown */
+input[type="checkbox"]:checked ~ .latest-release-dropdown {
+	width: max-content;
+	height: auto;
+	opacity: 1;
+	padding: 5px;
+}
+/* options in the lastest release drop down */
+.drop-item p {
+	text-align: center;
+}
+
+
+/* Popular Artist */
+.popularArtist{
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 26vw;
+    box-sizing: border-box;
+}
+
+.popularArtistContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.popularArtist div a img {
+	width: 10vw;
+	min-width: 60px;
+	min-height: 60px;
+	height: 10vw;
+	border-radius: 50%;
+}
+
+.popularArtistContent > a > div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.popularArtistContent > a > div > div {
+	position: absolute;
+	display: flex;
+	/* top: 0px;
+    left: 0px; */
+	top: 0px;
+	width: 10vw;
+	min-width: 60px;
+	min-height: 60px;
+	height: 10vw;
+	border-radius: 50%;
+	background-color: rgb(0, 0, 0);
+	opacity: 0;
+	transition: opacity ease-in-out 0.1s;
+}
+.popularArtistContent a div div i {
+	margin: auto;
+	font-size: 3vw;
+	opacity: 0;
+	transition: opacity ease-in-out 0.2s;
+}
+
+.popularArtistContent a:hover img{
+    opacity: 0.5;
+    /* z-index: 56; */
+    transform: scale(1.2);
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px 1px black;
+}
+
+.popularArtistContent a div div i{
+    margin: auto;
+    font-size: 3vw;
+    opacity: 0;
+    transition: opacity ease-in-out 0.2s;
+}
+.popularArtistContent a div div i:hover i{
+    opacity: 1;
+}
+
+.popularArtistContent div p{
+    text-decoration: none;
+    color: wheat;
+    text-align: center;
+}
+
+.faltu{
+    width: 100%;
+    height: 50px;
+}
+
+/* Genere */
+.genere{
+    position: relative;
+    top: 25vw;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.outerdiv{
+    width: 20vw;
+	height: 12.5vw;
+	overflow: hidden;
+	min-width: 125px;
+	min-height: 84px;
+	margin: 5px;
+	cursor: pointer;
+    /* background-color: black; */
+}
+
+.innerDiv{
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+    background-size: cover;
+    transition: all ease-in-out 0.2s;
+}
+.genere .outerdiv:nth-child(1) .innerDiv{
+    background-image: url(logo/party.jfif);
+}
+.genere .outerdiv:nth-child(2) .innerDiv{
+    background-image: url(logo/love.jfif);
+}
+.genere .outerdiv:nth-child(3) .innerDiv{
+    background-image: url(logo/travel2.jfif);
+}
+.genere .outerdiv:nth-child(4) .innerDiv{
+    background-image: url(logo/pop.jfif);
+}
+.genere .outerdiv:nth-child(5) .innerDiv{
+    background-image: url(logo/electronics.jfif);
+}
+.genere .outerdiv:nth-child(6) .innerDiv{
+    background-image: url(logo/hip-hop.jfif);
+}
+.genere .outerdiv .innerDiv:hover{
+    transform: scale(1.5);
+}
+
+.outerdiv .innerDiv span{
+    transform: scale(1);
+    color: wheat;
+    font-size: 2vw;
+    position: relative;
+    top: 30%;
+}
+.outerdiv:hover .innerDiv span {
+	transform: scale(0.75);
+}
+
+.innerDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Language */
+
+/* English Song */
+
+.language{
+    position: relative;
+    top: 25vw;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 3vw 0px;
+}
+
+.languageHeading{
+    color: wheat;
+}
+
+.LanguageContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 2px;
+}
+
+.LanguageContent div img{
+    width: 10vw;
+    min-width:65px;
+    height: 10vw;
+    min-height: 65px;
+    transition: box-shadow ease-in-out 0.2s;
+}
+
+.LanguageContent div p{
+    color: wheat;
+    width: 100%;
+}
+
+.LanguageContent div img:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    box-shadow: 0px 0px 12px 1px black;
+}
+
+
+/* This is for aside-2 section */
+.section-2 {
+	width: 28%;
+	height: 86vh;
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12%;
+}
+
+.heading  h4 a{
+    text-decoration: none;
+    color: wheat;
+}
+
+.playlistContent{
+    width: 100%;
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    overflow: scroll;
+    cursor: pointer;
+}
+.playlistContent::-webkit-scrollbar{
+    display: none;
+}
+
+.leftContent{
+    display: flex;
+    height: 100%;
+    width: 70%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.playlistItem{
+    width: 90%;
+    height: auto;
+    padding: 0px 1%;
+    box-sizing: border-box;
+    margin: 1%;
+}
+
+.DescriptionOfSong{
+    margin-left: 5%;
+    width: 50%;
+    word-wrap: break-word;
+    color: wheat;
+}
+
+.rightContent {
+	position: relative;
+	bottom: 68%;
+	left: 90%;
+	width: min-content;
+	height: 20px;
+	color: wheat;
+	font-size: 20px;
+}
+
+.rightContent i{
+    transition: all ease-in-out 1.0s;
+}
+.rightContent i:hover{
+    color: red;
+}
+
+.playlistItem:hover{
+    box-shadow: 0px 0px 12px 1px black;
+}
+.playlistItem img{
+    width: 100px;
+    height: 80px;
+}
+.coverer{
+    width: 80px;
+    height: 80px;
+}
+
+
+/* Footer part */
+footer{
+    position: absolute;
+	bottom: 1px;
+	width: 100%;
+	height: 60px;
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: nowrap;
+	padding: 0px 3%;
+	box-sizing: border-box;
+	z-index: 6;
+}
+
+.activeSong{
+    height: 90%;
+	width: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.songImg{
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+}
+.songImg img{
+    width: 100%;
+    height: 100%;
+}
+.heartAndBanIcon{
+    height: 100%;
+    padding: 4%;
+    color: wheat;
+}
+.songDes{
+    margin: 0% 1%;
+}
+/* song name */
+.songDes div:nth-child(1) {
+	font-size: 14px;
+    color: wheat;
+}
+/* song author */
+.songDes div:nth-child(2) {
+	font-size: 12px;
+    color: wheat;
+}
+
+/* Second Part of Footer */
+.mediaPlayer{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.controls{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: wheat;
+}
+.icon:hover{
+    box-shadow: 0 0 20px #74ADC8;
+    cursor: pointer;
+}
+.iconInside:hover{
+    box-shadow: 0 0 20px black;
+    cursor: pointer;
+}
+.slider{
+    width: 100%;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-top: 5px;
+}
+.sliderContainer{
+    width: 100%;
+}
+#slider{
+    /* -webkit-appearance: none; */
+	width: 100%;
+	height: 5px;
+	background: wheat;
+	outline: none;
+	opacity: 0.5;
+	/*-webkit-transition: 0.2s; */
+	transition: opacity 0.2s;
+}
+#slider:hover{
+    opacity: 1;
+}
+.time{
+    margin: 0px 10px;
+    color: wheat;
+}
+
+/* The Extra part of the Footer */
+
+.extraItem{
+    width: 20%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+    color: wheat;
+}

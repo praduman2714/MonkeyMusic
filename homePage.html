@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="homeResponsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonkeyMusic</title>
+    <script  src="https://kit.fontawesome.com/b3348ae33f.js"
+      crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+
+    <nav class="navigationBar">
+        <div class="titleCombo">
+            <div class="logo">
+                <img src="logo/download.png">
+            </div>
+            <div class="webName">
+                <h3>MonkeyMusic</h3>
+            </div>
+        </div>
+        <!-- For favourites part  -->
+        <div class="fav">
+            <h3 style="color: wheat;">
+                Favourites
+            </h3>
+        </div>
+        <div class="searchBar">
+            <div style="color: wheat;">
+                <!-- magnifying glass- search icon -->
+                <i class="fas fa-search search-ico"></i>
+            </div>
+            <input type="text" name="search" placeholder="Search">
+            <div style="color: wheat;">
+                <!-- mic icon -->
+                <i class="fas fa-microphone mic-ico"></i>
+            </div>
+        </div>
+
+        <div class="notification-bell">
+            <i  class="fa-regular fa-bell"></i> <span>Notifications</span>
+
+        </div>
+        <!-- this is for profile picture -->
+        <div class="profile-picture">
+            <img src="logo/profile.png">
+        </div>
+    </nav>
+
+
+<!-- This is the middle part of the page which will store the
+ Banner of the page , below banner , there will be Latest realease
+ and we will make one more div, which will be aside of this div
+and will contains playlist of the songs.-->
+
+    <main>
+        <aside class="aside section-1">
+            <div class="banner">
+                <div class="innerBanner">
+                    <img src="logo/bheadiya.jfif">
+                    <img src="logo/coldPlay.jfif">
+                    <img src="logo/englishSong.jfif">
+                </div>
+            </div>
+    
+            <div class="latestRelease">
+                <h1 style="margin-bottom: 12px; color: wheat;">
+                    Latest Release
+                </h1>
+                <div class="latestReleaseContent">
+                    <div class="card">
+                        <div>
+                            <!-- image -->
+                            <img src="logo/besharamRang.jfif">
+                            <div class="playButton">
+                                <i class="fas fa-play" style="width:45%; height:45%; display:inline-block"></i>
+                            </div>
+                        </div>
+                        <div class="songDescription">
+                            <h3>
+                                Besharam Rang
+                            </h3>
+                            <p>
+                                November , 2022
+                            </p>
+                        </div>
+                        <div class="options">
+                            
+                                <!-- duration of the song -->
+                                <p>
+                                    3:35
+                                </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 2nd card -->
+                    <div class="card">
+                        <div>
+                            <!-- image -->
+                            <img src="logo/Godhi.jfif">
+                            <div class="playButton">
+                                <i class="fas fa-play" style="width:45%; height:45%; display:inline-block"></i>
+                            </div>
+                        </div>
+                        <div class="songDescription">
+                            <h3>
+                                Ghodhye Pr Sawar
+                            </h3>
+                            <p>
+                                January , 2023
+                            </p>
+                        </div>
+                        <div class="options">
+                            
+                                <!-- duration of the song -->
+                                <p>
+                                    2:45
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Third Card -->
+                        <div class="card">
+                            <div>
+                                <!-- image -->
+                                <img src="logo/apnaBnaLe.jfif">
+                                <div class="playButton">
+                                    <i class="fas fa-play" style="width:45%; height:45%; display:inline-block"></i>
+                                </div>
+                            </div>
+                            <div class="songDescription">
+                                <h3>
+                                    Apna Bana Le
+                                </h3>
+                                <p>
+                                    November , 2022
+                                </p>
+                            </div>
+                            <div class="options">
+                                
+                                    <!-- duration of the song -->
+                                    <p>
+                                        3:35
+                                    </p>
+                            </div>
+                        </div>
+                        <!-- Fourth Song -->
+
+                        <div class="card">
+                            <div>
+                                <!-- image -->
+                                <img src="logo/nobody.jfif">
+                                <div class="playButton">
+                                    <i class="fas fa-play" style="width:45%; height:45%; display:inline-block"></i>
+                                </div>
+                            </div>
+                            <div class="songDescription">
+                                <h3>
+                                    No Body Get Me
+                                </h3>
+                                <p>
+                                    November , 2022
+                                </p>
+                            </div>
+                            <div class="options">
+                                
+                                    <!-- duration of the song -->
+                                    <p>
+                                        3:35
+                                    </p>
+                            </div>
+                        </div>
+                        <!-- Fifth Card -->
+                        <div class="card">
+                            <div>
+                                <!-- image -->
+                                <img src="logo/JhomeJoPathan.jfif">
+                                <div class="playButton">
+                                    <i class="fas fa-play" style="width:45%; height:45%; display:inline-block"></i>
+                                </div>
+                            </div>
+                            <div class="songDescription">
+                                <h3>
+                                    Jhome Jo Pathan
+                                </h3>
+                                <p>
+                                    November , 2022
+                                </p>
+                            </div>
+                            <div class="options">
+                                
+                                    <!-- duration of the song -->
+                                    <p>
+                                        3:35
+                                    </p>
+                            </div>
+                        </div>
+                        <!-- Sixth Card -->
+                        <div class="card">
+                            <div>
+                                <!-- image -->
+                                <img src="logo/keshariya.jfif">
+                                <div class="playButton">
+                                    <i class="fas fa-play" style="width:45%; height:45%; display:inline-block"></i>
+                                </div>
+                            </div>
+                            <div class="songDescription">
+                                <h3>
+                                    Keshariya Tera
+                                </h3>
+                                <p>
+                                    November , 2022
+                                </p>
+                            </div>
+                            <div class="options">
+                                
+                                    <!-- duration of the song -->
+                                    <p>
+                                        3:35
+                                    </p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+
+            
+            <!-- Language -->
+
+            <div class="language english">
+                <h1 class="languageHeading">
+                    Latest English
+                </h1>
+
+                <div class="LanguageContent">
+                    <div>
+                        <img src="logo/fallInLove.jfif">
+                        <p>Fall In Love Alone</p>
+                    </div>
+
+                    <div>
+                        <img src="logo/toomanynight.jfif">
+                        <p>Too Many Night</p>
+                    </div>
+                    <div>
+                        <img src="logo/nobody.jfif">
+                        <p>Nobody Get Me</p>
+                    </div>
+                    <div>
+                        <img src="logo/myMind.jfif">
+                        <p>My Mind And Me</p>
+                    </div>
+                    <div>
+                        <img src="logo/downInAtlanta.jfif">
+                        <p>Down In Atlanta</p>
+                    </div>
+                    <div>
+                        <img src="logo/Tukha.jfif">
+                        <p>Tukha Toka</p>
+                    </div>
+                    
+                </div>
+                <!-- <div class="faltu"></div> -->
+            </div>
+
+            <div class="language hindi">
+                <h1 class="languageHeading">
+                    Latest Hindi
+                </h1>
+
+                <div class="LanguageContent">
+                    <div>
+                        <img src="logo/JhomeJoPathan.jfif">
+                        <p>Jhume Jo Pathan</p>
+                    </div>
+
+                    <div>
+                        <img src="logo/Godhi.jfif">
+                        <p>Ghodey Pr Sawar</p>
+                    </div>
+                    <div>
+                        <img src="logo/besharamRang.jfif">
+                        <p>Besharam Rang</p>
+                    </div>
+                    <div>
+                        <img src="logo/currentLga.jfif">
+                        <p>Current Laga Re</p>
+                    </div>
+                    <div>
+                        <img src="logo/apnaBnaLe.jfif">
+                        <p>Apna Bana Le</p>
+                    </div>
+                    <div>
+                        <img src="logo/keshariya.jfif">
+                        <p>Keshariya</p>
+                    </div>
+                    
+                </div>
+                <!-- <div class="faltu"></div> -->
+            </div>
+
+            <!-- Popular Artist -->
+
+            <div class="popularArtist">
+                <h1 style="color: wheat; margin-bottom: 12px;">
+                    Popular Artist 
+                </h1>
+                <div class="popularArtistContent">
+                    <a href="#">
+                        <div>
+                            <img src="logo/arijitSingh.jfif " class="artistImage">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>Arijit Singh</p>
+                        </div>
+                    </a>
+                    <!-- Second Artist -->
+                    <a href="#">
+                        <div>
+                            <img src="logo/nehaKakkar.jfif " class="artistImage">
+                            <div><i class="fas fa-play"></i></div>
+                            <p >Neha Kakkar</p>
+                        </div>
+                    </a>
+                    <!-- Third Artist -->
+                    <a href="#">
+                        <div>
+                            <img src="logo/atifAslam.jfif " class="artistImage">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>Atif Aslam</p>
+                        </div>
+                    </a>
+                    <!-- Fourth Artist -->
+                    <a href="#">
+                        <div>
+                            <img src="logo/kumarSanu.jfif " class="artistImage">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>Kumar Sanu</p>
+                        </div>
+                    </a>
+                    <!-- Fifth Artist -->
+                    <a href="#">
+                        <div>
+                            <img src="logo/himeshReshmaiya.jfif " class="artistImage">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>Himesh Reshmaiya</p>
+                        </div>
+                    </a>
+                    <!-- Sixth Artist -->
+                    <a href="#">
+                        <div>
+                            <img src="logo/hritikRoshan.jfif " class="artistImage">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>Hritik Roshan</p>
+                        </div>
+                    </a>
+                    <!-- Seventh Artist -->
+                    <a href="#">
+                        <div>
+                            <img src="logo/shreyaGhosal.jfif " class="artistImage">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>Shreya Ghosal</p>
+                        </div>
+                    </a>
+                    <!-- Eigth Artist -->
+                    <a href="#">
+                        <div>
+                            <img src="logo/manojTiwari.jfif " class="artistImage">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>Manoj Tiwari</p>
+                        </div>
+                    </a>
+                    <!-- Ninth Artist -->
+                    <a href="#">
+                        <div>
+                            <img src="logo/neetiMohan.jfif " class="artistImage">
+                            <div><i class="fas fa-play"></i></div>
+                            <p>Neeti Mohan</p>
+                        </div>
+                    </a>
+                    
+                </div>
+                    
+
+                <div class="faltu">
+
+                </div>
+            </div>
+
+            <!-- Genere  -->
+            <!-- This is the theam portion. -->
+            <!-- <h1 style="margin-bottom: 12px; margin-top: 10px; z-index: 3;">
+                Genere
+            </h1> -->
+            
+            <div class="genere">
+
+                
+                
+                <div class="outerdiv">
+                    <div class="innerDiv">
+                        <span>Party</span>
+                    </div>
+                </div>
+
+                <div class="outerdiv">
+                    <div class="innerDiv">
+                        <span>Love</span>
+                    </div>
+                </div>
+
+                <div class="outerdiv">
+                    <div class="innerDiv">
+                        <span>Travel</span>
+                    </div>
+                </div>
+                <div class="outerdiv">
+                    <div class="innerDiv">
+                        <span>Pop</span>
+                    </div>
+                </div>
+                <div class="outerdiv">
+                    <div class="innerDiv">
+                        <span>Electronics</span>
+                    </div>
+                </div>
+                <div class="outerdiv">
+                    <div class="innerDiv">
+                        <span>Hip-Hop</span>
+                    </div>
+                </div>
+                  <div class="faltu"></div>
+            </div>
+
+
+
+        </aside>
+
+        <!-- This is anothere part of Aside section , you 
+        can see this part at the extream right part of the page -->
+        <aside class="aside section-2">
+            <div class="heading">
+                <h1 style="color: wheat;">
+                    Playlist
+                </h1>
+                <h4>
+                    <a href="#">Queue <i class="fa-light fa-caret-down"></i></a>
+                </h4>
+            </div>
+
+            <div class="playlistContent">
+                <div class="playlistItem">
+
+                    <div class="leftContent">
+                        <div style="margin-right: 5px; color: wheat;">
+                            1
+                        </div>
+                        <div class="coverer">
+                            <img src="logo/currentLga.jfif">
+                            <div class="playButton">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class ="DescriptionOfSong">
+                            <div>
+                                Current Laga
+                            </div>
+                            <p>
+                                Circus
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="rightContent">
+                        <i class="far fa-heart" style="color: wheat;"></i>
+                    </div>
+                    
+                </div>
+
+                <!-- Second Item in PlayList -->
+                <div class="playlistItem">
+
+                    <div class="leftContent">
+                        <div style="margin-right: 5px; color: wheat;">
+                            2
+                        </div>
+                        <div class="coverer">
+                            <img src="logo/JhomeJoPathan.jfif">
+                            <div class="playButton">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class ="DescriptionOfSong">
+                            <div>
+                                Jhome Jo Pathan
+                            </div>
+                            <p>
+                                Pathan
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="rightContent">
+                        <i class="far fa-heart" style="color: wheat;"></i>
+                    </div>
+                    
+                </div>
+
+                <!-- Third Song in PlayList -->
+                <div class="playlistItem">
+
+                    <div class="leftContent">
+                        <div style="margin-right: 5px; color: wheat;">
+                            3
+                        </div>
+                        <div class="coverer">
+                            <img src="logo/apnaBnaLe.jfif">
+                            <div class="playButton">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class ="DescriptionOfSong">
+                            <div>
+                                Apna Bana Le
+                            </div>
+                            <p>
+                                Bhediya
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="rightContent">
+                        <i class="far fa-heart" style="color: wheat;"></i>
+                    </div>
+                    
+                </div>
+                <!-- Fourth song in playlist -->
+
+                <div class="playlistItem">
+
+                    <div class="leftContent">
+                        <div style="margin-right: 5px; color: wheat;">
+                            4
+                        </div>
+                        <div class="coverer">
+                            <img src="logo/Godhi.jfif">
+                            <div class="playButton">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class ="DescriptionOfSong">
+                            <div>
+                                Ghodey Par Sawar
+                            </div>
+                            <p>
+                                Qala
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="rightContent">
+                        <i class="far fa-heart" style="color: wheat;"></i>
+                    </div>
+                    
+                </div>
+
+                <!-- Fifth song -->
+
+                <div class="playlistItem">
+
+                    <div class="leftContent">
+                        <div style="margin-right: 5px; color: wheat;">
+                            5
+                        </div>
+                        <div class="coverer">
+                            <img src="logo/toomanynight.jfif">
+                            <div class="playButton">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class ="DescriptionOfSong">
+                            <div>
+                                Too Many Nights
+                            </div>
+                            <p>
+                                Album
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="rightContent">
+                        <i class="far fa-heart" style="color: wheat;"></i>
+                    </div>
+                    
+                </div>
+
+                <!-- Sixth -->
+
+                <div class="playlistItem">
+
+                    <div class="leftContent">
+                        <div style="margin-right: 5px; color: wheat;">
+                            6
+                        </div>
+                        <div class="coverer">
+                            <img src="logo/keshariya.jfif">
+                            <div class="playButton">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class ="DescriptionOfSong">
+                            <div>
+                                keshariya
+                            </div>
+                            <p>
+                                Bharamstra
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="rightContent">
+                        <i class="far fa-heart" style="color: wheat;"></i>
+                    </div>
+                    
+                </div>
+
+                <!-- Sixth song -->
+                <div class="playlistItem">
+
+                    <div class="leftContent">
+                        <div style="margin-right: 5px; color: wheat;">
+                            7
+                        </div>
+                        <div class="coverer">
+                            <img src="logo/fallInLove.jfif">
+                            <div class="playButton">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class ="DescriptionOfSong">
+                            <div>
+                                Fall In Love
+                            </div>
+                            <p>
+                                Stacy Rayan
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="rightContent">
+                        <i class="far fa-heart" style="color: wheat;"></i>
+                    </div>
+                    
+                </div>
+
+                <!-- Eight Song -->
+
+                <div class="playlistItem">
+
+                    <div class="leftContent">
+                        <div style="margin-right: 5px; color: wheat;">
+                            8
+                        </div>
+                        <div class="coverer">
+                            <img src="logo/kyaBaat.jfif">
+                            <div class="playButton">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class ="DescriptionOfSong">
+                            <div>
+                                Kya Baat hai
+                            </div>
+                            <p>
+                                GovindA Mera Naam
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="rightContent">
+                        <i class="far fa-heart" style="color: wheat;"></i>
+                    </div>
+                    
+                </div>
+
+                <!-- Ninth song -->
+                <div class="playlistItem">
+
+                    <div class="leftContent">
+                        <div style="margin-right: 5px; color: wheat;">
+                            9
+                        </div>
+                        <div class="coverer">
+                            <img src="logo/coca.jfif">
+                            <div class="playButton">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class ="DescriptionOfSong">
+                            <div>
+                                Coca 2.0
+                            </div>
+                            <p>
+                                Liger
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="rightContent">
+                        <i class="far fa-heart" style="color: wheat;"></i>
+                    </div>
+                    
+                </div>
+
+                <!-- Tenth -->
+
+                <div class="playlistItem">
+
+                    <div class="leftContent">
+                        <div style="margin-right: 5px; color: wheat;">
+                            10
+                        </div>
+                        <div class="coverer">
+                            <img src="logo/oSanam.jfif">
+                            <div class="playButton">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class ="DescriptionOfSong">
+                            <div>
+                                O Sanam
+                            </div>
+                            <p>
+                                Lucky Ali
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="rightContent">
+                        <i class="far fa-heart" style="color: wheat;"></i>
+                    </div>
+                    
+                </div>
+                
+
+            </div>
+            
+
+        </aside>
+    </main>
+
+
+
+
+    <footer>
+        <div class="activeSong">
+            <div class="songImg">
+                <img src="logo/Godhi.jfif">
+            </div>
+            <div class="songDes">
+                <div >
+                    Ghodhi Par sawar
+                </div>
+                <div >
+                    Sireesha Bhagavatula
+                </div>
+            </div>
+            <div class="heartAndBanIcon">
+                <span class="icon">
+                    <i class="far fa-heart"></i>
+                </span>
+                <span class="icon">
+                    <i class="fas fa-ban"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="mediaPlayer">
+            <div class="controls">
+                <div class="icon"><i class="fas fa-random"></i></div>
+                <div class="icon"><i class="fas fa-step-backward"></i></div>
+                <div class="icon"><i class="fas fa-pause-circle"></i></div>
+                <div class="icon"><i class="fas fa-step-forward"></i></div>
+                <div class="icon"><i class="fas fa-redo"></i></div>
+            </div>
+
+            <div class="slider">
+                <div class="time">0:00</div>
+                <div class="sliderContainer">
+                    <input type="range" min="0" max="100" value="0" id="slider" id="myRange">
+
+                </div>
+                <div class="time">3:59</div>
+            </div>
+        </div>
+
+        <div class="extraItem">
+            <div class="icon">
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div class="icon">
+                <i class="fas fa-laptop"></i>
+            </div>
+            <div class="icon">
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="sliderContainer" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" id="slider" id="myRange" style="margin-top:0px;">
+            </div>
+            <div class="icon">
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+    </footer>
+
+
+
+    
+
+    
+    
+</body>
+</html>

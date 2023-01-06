@@ -1,0 +1,161 @@
+@media  screen and (max-width: 900px) {
+    label[for="more"]{
+        display: block;
+    }
+
+    .section-2 {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		width: 300px;
+		height: 66vh;
+		background-color: #050043;
+		box-shadow: 0px 0px 2px 1px white;
+		right: 0px;
+		top: 23.5%;
+		z-index: 5;
+		overflow: scroll;
+		padding-left:10px;
+		transition: visibility ease-in-out 0.2s;
+		transition: opacity ease-in-out 0.2s;
+	}
+
+    .section-2::-webkit-scrollbar{
+        display: none;
+    }
+
+    .section-1{
+        width: 100%;
+    }
+    .card{
+        min-width: 250px;
+    }
+    .banner{
+        height: 9%;
+    }
+    .innerBanner img{
+        height: 23.5vw;
+        width: 34.5vw;
+    }
+    /* first and 3rd images of the innerBanner */
+	.innerBanner img:nth-child(1) {
+		left: 56vw;
+	}
+	.innerBanner img:nth-child(3) {
+		right: 56vw;
+	} /* since the size of the innerBanner images is increased, the hover size should also be increased */
+	.innerBanner img:hover {
+		height: 27vw;
+		width: 40.5vw;
+	}
+
+    .songDescription {
+        font-size: 12px;
+    }
+
+    .genere{
+        justify-content: center;
+    }
+    .songDes{
+        /* width: auto; */
+        height: 100%;
+        font-size: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .webName h3{
+        font-size: 22px;
+    }
+    .fav h3{
+        font-size: 18px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 728px) {
+    .extraItem > div:nth-child(3){
+        display: none;
+    }
+    .webName h3{
+        font-size: 18px;
+    }
+
+    .searchBar{
+        width: 35%;
+    }
+
+    .extraItem > div:nth-child(4){
+        display: none;
+    }
+    .fav h3{
+        display: none;
+    }
+    .outerDiv{
+        width: 35vw;
+        height: 25vw;
+        min-width: 123px;
+        min-height: 82px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    /* Nav Bar */
+    .titleCombo .webName{
+        display: none;
+    }
+    .searchBar{
+        width: 45%;
+    }
+    .notification-bell span{
+        display: none;
+    }
+
+    /* card part */
+
+    .songDescription p{
+        display: none;
+    }
+    .options{
+        display: none;
+    }
+
+    .genere div img {
+		width: 18vw;
+		height: 18vw;
+	}
+    .LanguageContent{
+       justify-content: space-around;
+    }
+
+    .LanguageContent > div:nth-child(4){
+        display: none;
+    }
+    .LanguageContent > div:nth-child(5){
+        display: none;
+    }
+    .LanguageContent p{
+        font-size: 12px;
+    }
+
+    /* What I dicided that the people viewing in this
+    size would not be able to see the name of artist */
+    .popularArtistContent a:nth-child(5){
+        display: none;
+    }
+    .controls div:nth-child(1){
+        display: none;
+    }
+    .controls div:nth-child(5){
+        display: none;
+    }
+    .songDes div:nth-child(2){
+        display: none;
+    }
+}
