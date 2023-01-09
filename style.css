@@ -204,7 +204,7 @@ main{
     /* position:relative; */
     box-shadow: 0px 0px 10px 1px black;
     cursor: pointer;
-    transform: scale(1.1);
+    
 }
 .card img{
     height: 100%;
@@ -230,7 +230,7 @@ main{
 }
 
 .songDescription{
-    margin: auto 10%;
+    margin: auto 15%;
 }
 .options{
     position: relative;
@@ -238,12 +238,14 @@ main{
     flex-direction: column;
     flex-wrap: wrap-reverse;
     text-align: right;
-    margin: auto 0% 2% 2%;
+    margin: auto 0% 1% 2%;
+    margin-right: 10px;
 }
+
 
 .latest-release-dropdown {
 	position: absolute;
-	background-color: darkslateblue;
+	background-image: linear-gradient(60deg, rgb(16, 22, 39), rgb(42, 42, 80));
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -258,6 +260,7 @@ main{
 	border: 1px solid black;
 	box-shadow: 0px 0px 2px 1px black;
 	transition: all ease-in-out 0.3s;
+    color: wheat;
 }
 
 .fa-ellipsis-h {

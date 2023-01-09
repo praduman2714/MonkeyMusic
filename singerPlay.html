@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="singerPlay.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script  src="https://kit.fontawesome.com/b3348ae33f.js"
+      crossorigin="anonymous"
+  ></script>
+    <title>MonkeyMusic</title>
+</head>
+<body>
+
+    <nav class="navBar">
+        <div class="logo">
+            <img src="logo/download.png">
+            <h2>MonkeyMusic</h2>
+        </div>
+
+        <div class="fav">
+            <i class="fa-regular fa-heart"></i>
+            <h3 style="color: wheat;">Favourites</h3>
+        </div>
+
+        <div class="searchBar">
+            <div >
+                <!-- magnifying glass- search icon -->
+                <i class="fas fa-search search-ico"></i>
+            </div>
+            <input type="text" name="search" placeholder="Search">
+            <div >
+                <!-- mic icon -->
+                <i class="fas fa-microphone mic-ico"></i>
+            </div>
+        </div>
+
+        <div class="profile">
+            <img src="logo/profile.png">
+        </div>
+        
+
+    </nav>
+    <!-- Main Section  -->
+        <!-- It is divided into two part -->
+    <main class="mainSection">
+        <aside class="section1">
+            <div class="border">
+                <div class="imagePart">
+                    <img src="logo/WestrosBand.jfif">
+                </div>
+                <div class="bandDes">
+                    <h1>El-Classio</h1>
+                    <h5>
+                        Westros Band
+                    </h5>
+
+                    <br>
+
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab commodi dolore, tempora animi nobis accusantium autem nulla inventore repellat illo dolorem id veritatis. Dolore quidem aliquid, iusto amet atque exercitationem minima soluta nulla nisi dolorem accusantium quas doloremque autem ad minus hic ea corporis iste reprehenderit. Perferendis reprehenderit modi cupiditate!
+                    </p>
+                    <br>
+                    <div class="playButton">
+                        
+                        <button><i class="fa-sharp fa-solid fa-play"></i> <span>Play All</span> </button>
+                        <p style="color: wheat;">
+                            Follow
+                        </p>
+                    </div>
+                    
+                    <div class="extraDes">
+                        <p class="numbers">
+                            127 track
+                        </p>
+
+                    </div>
+
+                </div>
+                
+            </div>
+        </aside>
+        <!-- This is second aside seciton -->
+        <aside class="section2">
+
+        </aside>
+    </main>  
+    
+    <footer>
+        <div class="activeSong">
+            <div class="songImg">
+                <img src="logo/Godhi.jfif">
+            </div>
+            <div class="songDes">
+                <div >
+                    Ghodhi Par sawar
+                </div>
+                <div >
+                    Sireesha Bhagavatula
+                </div>
+            </div>
+            <div class="heartAndBanIcon">
+                <span class="icon">
+                    <i class="far fa-heart"></i>
+                </span>
+                <span class="icon">
+                    <i class="fas fa-ban"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="mediaPlayer">
+            <div class="controls">
+                <div class="icon"><i class="fas fa-random"></i></div>
+                <div class="icon"><i class="fas fa-step-backward"></i></div>
+                <div class="icon"><i class="fas fa-pause-circle"></i></div>
+                <div class="icon"><i class="fas fa-step-forward"></i></div>
+                <div class="icon"><i class="fas fa-redo"></i></div>
+            </div>
+
+            <div class="slider">
+                <div class="time">0:00</div>
+                <div class="sliderContainer">
+                    <input type="range" min="0" max="100" value="0" id="slider" id="myRange">
+
+                </div>
+                <div class="time">3:59</div>
+            </div>
+        </div>
+
+        <div class="extraItem">
+            <div class="icon">
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div class="icon">
+                <i class="fas fa-laptop"></i>
+            </div>
+            <div class="icon">
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="sliderContainer" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" id="slider" id="myRange" style="margin-top:0px;">
+            </div>
+            <div class="icon">
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
